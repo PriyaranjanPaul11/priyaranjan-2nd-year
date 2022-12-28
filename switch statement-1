@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int num1,num2,choice;
+    
+    printf("Enter two numbers\n");
+    scanf("%d%d",&num1,&num2);
+    
+    printf("Press\n1 for sum\n2 for sub\n3 for mul\n4 for div\n");
+    
+    scanf("%d,&choice");
+    
+    switch(choice)
+    {
+        case 1:
+        printf("sum=%d\n",num1+num2);
+        break;
+        case 2:
+        printf("sub=%d\n",num1-num2);
+        break;
+        case 3:
+        printf("mul=%d\n",num1*num2);
+        break;
+        case 4:
+        printf("div=%d\n",num1/num2);
+        break;
+        default:
+        printf("Enter valid choice\n");
+        
+        
+    }
+    return 0;
+}
