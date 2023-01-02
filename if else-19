@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int marks[5];  // array to store marks for 5 subjects
+    int total = 0;  // variable to store the total marks
+    float percentage;  // variable to store the percentage
+
+    printf("Enter marks for 5 subjects: ");
+
+    // Read marks for 5 subjects
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &marks[i]);
+        total += marks[i];  // add the marks to the total
+    }
+
+    // Calculate percentage
+    percentage = (float) total / 5;
+
+    // Display the percentage
+    printf("Percentage: %.2f\n", percentage);
+
+    // Determine and display the grade based on the percentage
+    if (percentage >= 90) {
+        printf("Grade: A+\n");
+    } else if (percentage >= 80) {
+        printf("Grade: A\n");
+    } else if (percentage >= 70) {
+        printf("Grade: B+\n");
+    } else if (percentage >= 60) {
+        printf("Grade: B\n");
+    } else if (percentage >= 50) {
+        printf("Grade: C+\n");
+    } else if (percentage >= 40) {
+        printf("Grade: C\n");
+    } else {
+        printf("Grade: F\n");
+    }
+
+    return 0;
+}
