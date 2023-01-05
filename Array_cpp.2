@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    // Initialize an array with 10 elements
+    int array[10];
+
+    // Ask the user to enter 10 integers and store them in the array
+    for (int i = 0; i < 10; i++) {
+        cout << "Enter an integer: ";
+        cin >> array[i];
+    }
+
+    // Ask the user for a number to search for
+    int search_number;
+    cout << "Enter a number to search for: ";
+    cin >> search_number;
+
+    // Search the array for the number
+    bool found = false;
+    for (int i = 0; i < 10; i++) {
+        if (array[i] == search_number) {
+            found = true;
+            break;
+        }
+    }
+
+    // Print the result
+    if (found) {
+        cout << search_number << " is in the array" << endl;
+    } else {
+        cout << search_number << " is not in the array" << endl;
+    }
+
+    return 0;
+}
