@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {11, 22, 33, 43, 54,43,4,55,56,66};
+    int searchValue = 55; // value to be searched
+    bool found = false; // flag to indicate if the value is found
+
+    // Search the array
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] == searchValue) {
+            cout << "Value " << searchValue << " found at index " << i << endl;
+            found = true;
+            break;
+        }
+    }
+    if (!found) {
+        cout << "Value " << searchValue << " not found in the array" << endl;
+    }
+
+    return 0;
+}
