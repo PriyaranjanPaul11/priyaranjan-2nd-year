@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int num=1;
+    print:
+    cout<<num<<" ";
+    num++;
+    if(num<=10)
+    goto print;
+    return 0;
+}
